@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>eacaf2bc-363f-47f5-b064-aced9d116038</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Cube_2.py</StartupFile>
+    <StartupFile>Cube_1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
