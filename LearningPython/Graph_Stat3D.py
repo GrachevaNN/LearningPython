@@ -4,10 +4,10 @@ from matplotlib import cm
 import matplotlib.pyplot as plt
 
 def z_function(x, y):
-    return 450.56 - 0.048 * x + 4.6 * y + 0.0003 * x ** 2 - 0.0718 * y ** 2
+    return 0.0364 + 0.00093*np.log(x) - 0.00269*np.log(y)
 
-x = np.linspace(0, 500, 50)
-y = np.linspace(0, 64, 32)
+x = np.linspace(64, 640, 30)
+y = np.linspace(1000, 40000, 30)
 
 X, Y = np.meshgrid(x, y)
 Z = z_function(X, Y)
@@ -27,8 +27,8 @@ ax.w_zaxis.set_pane_color((1.0, 1.0, 1.0, 1.0))
 # подписи (заголовки) осей,
 # с указанием размера и цвета шрифта
 # текст в $$ - текст в формате LaTex
-ax.set_xlabel('$X$', fontsize = 15, color = 'black')
-ax.set_ylabel('$Z$', fontsize = 15, color = 'black')
+ax.set_xlabel('$Z$', fontsize = 15, color = 'black')
+ax.set_ylabel('$Y$', fontsize = 15, color = 'black')
 ax.set_zlabel('$T_{GPU}, ms$', fontsize = 15, color = 'black')
 
 #ax.contour(Z)
